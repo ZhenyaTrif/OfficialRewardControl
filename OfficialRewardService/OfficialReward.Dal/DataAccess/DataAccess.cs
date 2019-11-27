@@ -1,18 +1,15 @@
 ﻿using OfficialReward.Dal.DataAccess.Interfaces;
 using OfficialReward.Dal.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OfficialReward.Dal.DataAccess
 {
     public class DataAccess : IDataAccess
     {
-        public DataAccess(IBuisenessBookRepository buisenessBooks, ICommandRepository commands, 
+        public DataAccess(IBuisenessBookRepository buisenessBooks, ICommandRepository commands,
             IEducationRepository educations, IEmployeeRepository employees,
-            ILastWorkRepository lastWorks, IPrivateBusinessRepository privateBusinesses, 
+            ILastWorkRepository lastWorks, IPrivateBusinessRepository privateBusinesses,
             IRegionRepository regions, IRewardRepository rewards,
-            ISubdivisionRepository subdivision, IUserRepository users, 
+            ISubdivisionRepository subdivision, IUserRepository users,
             IWorkPostRepository workPosts)
         {
             BuisenessBooks = buisenessBooks;

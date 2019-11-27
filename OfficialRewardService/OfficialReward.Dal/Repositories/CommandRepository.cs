@@ -2,9 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using OfficialReward.Dal.Contexts;
 using OfficialReward.Dal.Repositories.Interfaces;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace OfficialReward.Dal.Repositories

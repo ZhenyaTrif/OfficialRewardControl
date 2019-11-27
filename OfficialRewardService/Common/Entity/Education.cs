@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Common.Entity
+﻿namespace Common.Entity
 {
     public partial class Education
     {

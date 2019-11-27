@@ -4,9 +4,6 @@ using OfficialReward.Dal.DataAccess;
 using OfficialReward.Dal.DataAccess.Interfaces;
 using OfficialReward.Dal.Repositories;
 using OfficialReward.Dal.Repositories.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace OfficialReward.DI
 {

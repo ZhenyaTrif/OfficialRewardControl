@@ -1,7 +1,5 @@
-﻿using System;
-using Common.Entity;
+﻿using Common.Entity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace OfficialReward.Dal.Contexts
 {
