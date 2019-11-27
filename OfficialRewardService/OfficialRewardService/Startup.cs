@@ -33,6 +33,8 @@ namespace OfficialRewardService
             services.IoCCommonRegister(Configuration);
 
             services.AddDbContext<rewardControldbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DbConnection")));
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,7 +49,8 @@ namespace OfficialRewardService
                 app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
+            app.UseCors(builder => builder.WithOrigins(Configuration["ApplicationSettings:ClientUrl"].ToString()).AllowAnyHeader().AllowAnyMethod());
+
             app.UseMvc();
         }
     }
