@@ -1,8 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc;
+using OfficialReward.Dal.Contexts;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace OfficialRewardService.Controllers
 {
@@ -10,6 +8,8 @@ namespace OfficialRewardService.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public ValuesController(rewardControldbContext context) { }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
